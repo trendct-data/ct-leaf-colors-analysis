@@ -1,6 +1,6 @@
-devtools::install_github("joelcarlson/RImagePalette")
+#devtools::install_github("joelcarlson/RImagePalette")
 library(RImagePalette)
-install.packages("magick")
+#install.packages("magick")
 library(magick)
 
 #Loading image
@@ -35,7 +35,7 @@ for (i in 1:length(files_list)) {
   cropped_folder <- paste0(directory_name2, "/", directory_name2, "_cropped/", file_name)
   image_write(foliage_crop, cropped_folder)
   image <- jpeg::readJPEG(cropped_folder)
-  imagePalette <- image_palette(image, n=1)
+  imagePalette <- image_palette(image, n=9)
   date <- gsub(".jpg", "", file_name)
   
   ind_row <- data.frame(row=i, year=year, date=date, color=imagePalette)
