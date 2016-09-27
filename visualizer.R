@@ -40,6 +40,7 @@ gg <- ggplot(image_df) +
   geom_linerange(image_df, mapping=aes(x=row, ymin=1, ymax=50), colour = "white") 
   
   for (i in 1:nrow(image_df)) {
+    #print(i)
     gg <- gg + annotate("segment", x = image_df$row_widths[i], xend = image_df$end[i], y = -Inf, yend = Inf, colour = image_df$color[i],  size=3)
   }
 
@@ -82,3 +83,11 @@ cam_spectrum(2012, "2320", "Criscuolo Park")
 cam_spectrum(2013, "2320", "Criscuolo Park")
 cam_spectrum(2014, "2320", "Criscuolo Park")
 cam_spectrum(2015, "2320", "Criscuolo Park")
+# 
+ x <- 2013
+ y <- "2320"
+ z <- "Criscuolo Park"
+
+ x <- 2015
+ y <- "2318"
+ z <- "Mohawk Mountain"

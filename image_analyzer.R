@@ -11,7 +11,7 @@ library(magick)
 
 directory_name2 <- "2320"
 directory_name <- "2320/2320c"
-crop_directions <- "130x70+400+550"
+crop_directions <- "125x70+652+560"
 
 img_cropper <- function(cam, dir, crop, letter) {
   letter <- letter
@@ -35,7 +35,7 @@ for (i in 1:length(files_list)) {
   cropped_folder <- paste0(directory_name2, "/", directory_name2, "_cropped/", file_name)
   image_write(foliage_crop, cropped_folder)
   image <- jpeg::readJPEG(cropped_folder)
-  imagePalette <- image_palette(image, n=9)
+  imagePalette <- image_palette(image, n=1, choice=max, volume=TRUE)
   date <- gsub(".jpg", "", file_name)
   
   ind_row <- data.frame(row=i, year=year, date=date, color=imagePalette)
@@ -64,14 +64,14 @@ B <- read.csv("2319/megaB.csv")
 C <- read.csv("2319/megaC.csv")
 D <- read.csv("2319/megaD.csv")
 E <- read.csv("2319/megaE.csv")
-F <- read.csv("2319/megaF.csv")
+H <- read.csv("2319/megaF.csv")
 G <- read.csv("2319/megaG.csv")
 
 mega <- rbind(A, B)
 mega <- rbind(mega, C)
 mega <- rbind(mega, D)
 mega <- rbind(mega, E)
-mega <- rbind(mega, F)
+mega <- rbind(mega, H)
 mega <- rbind(mega, G)
 
 mega <- arrange(mega, date)
@@ -101,7 +101,9 @@ write.csv(mega, "2318/mega.csv")
 
 img_cropper("2320", "2320/2320a", "90x40+1080+385", "A")
 img_cropper("2320", "2320/2320b", "90x40+1080+457", "B")
-img_cropper("2320", "2320/2320c", "130x70+400+550", "C")
+#img_cropper("2320", "2320/2320c", "130x70+400+550", "C")
+img_cropper("2320", "2320/2320c", "125x70+652+560", "C")
+
 
 A <- read.csv("2320/megaA.csv")
 B <- read.csv("2320/megaB.csv")
@@ -114,3 +116,19 @@ mega <- arrange(mega, date)
 mega$row <- as.numeric(rownames(mega))
 mega$X <- NULL
 write.csv(mega, "2320/mega.csv")
+
+
+mega <- read.csv("2318/mega.csv")
+mega$date[is.na(mega$date)] <- "#FFFFFF"
+write.csv(mega, "2318/mega.csv")
+
+
+mega <- read.csv("2319/mega.csv")
+mega$date[is.na(mega$date)] <- "#FFFFFF"
+write.csv(mega, "2319/mega.csv")
+
+
+mega <- read.csv("2320/mega.csv")
+mega$date[is.na(mega$date)] <- "#FFFFFF"
+write.csv(mega, "2320/mega.csv")
+
