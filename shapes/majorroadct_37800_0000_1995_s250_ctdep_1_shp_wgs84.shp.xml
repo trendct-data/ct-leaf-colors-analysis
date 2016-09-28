@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Connecticut Department of Environmental Protection</origin>
+				<pubdate>1995</pubdate>
+				<title>Connecticut Major Roads - 1995</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink>http://magic.lib.uconn.edu/magic_2/vector/37800/majorroadct_37800_0000_1995_s250_ctdep_1_shp.zip</onlink>
+				<ftname Sync="TRUE">majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>This datalayer is a simple representation of the major roads in Connecticut. It is a line Shapefile that does not accurately reflect the highway network in Connecticut because it was digitized at 1:250,000 scale and does not necessarily include all of the state and interstate routes. Be sure to only use this datalayer with other datalayers digitized at 1:250,000 scale such as Major Rivers or Town Index and not with the more spatially accurate 1:24,000 scale datalayers.</abstract>
+			<purpose>Data are intended for reference purposes only.</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>1986</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>None planned</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-73.659322</westbc>
+				<eastbc Sync="TRUE">-71.788462</eastbc>
+				<northbc Sync="TRUE">42.048600</northbc>
+				<southbc Sync="TRUE">40.997284</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">-73.659322</leftbc><rightbc Sync="TRUE">-71.788462</rightbc><bottombc Sync="TRUE">40.997284</bottombc><topbc Sync="TRUE">42.048600</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekey>Major Roads</themekey>
+				<themekey>State Highways</themekey><themekey>Interstate Highways</themekey><themekey>Routes</themekey></theme>
+			<place><placekey>Connecticut</placekey></place></keywords>
+		<accconst>none</accconst>
+		<useconst>Data are intended for reference purposes only.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Map and Geographic Information Center, Homer Babbidge Library, University of Connecticut</cntorg>
+					<cntper>Map Librarian</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>369 Fairfield Way</address>
+					<city>Storrs</city>
+					<state>Connecticut</state>
+					<postal>06269</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>860-486-4589</cntvoice>
+				<cntemail>magic@uconn.edu</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.0.1770</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<logic>None</logic>
+		<complete>None</complete>
+		<lineage><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\DOCUME~1\MAGICG~1\LOCALS~1\Temp\xml8BD.tmp</srcused><procdate Sync="TRUE">20090519</procdate><proctime Sync="TRUE">16161400</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset moved.</procdesc><srcused Sync="TRUE">M:\vector\37800\majorroadct_37800_0000_1995_s250_ctdep_1_shp\WGS84\CT_Major_Roads.1995.s250.ctdep.WGS84\CT_Major_Roads_1995_s250_ctdep_WGS84</srcused><procdate Sync="TRUE">20110621</procdate><proctime Sync="TRUE">16200900</proctime></procstep></lineage></dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84">
+				<sdtstype Sync="TRUE">String</sdtstype>
+				<ptvctcnt Sync="TRUE">92</ptvctcnt>
+			</sdtsterm>
+			<esriterm Name="majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polyline</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">92</efeacnt><spindex Sync="TRUE">TRUE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geodetic>
+				<horizdn Sync="TRUE">D_WGS_1984</horizdn>
+				<ellips Sync="TRUE">WGS_1984</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257224</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn></cordsysn><geograph><geogunit Sync="TRUE">Decimal degrees</geogunit><latres Sync="TRUE">0.000000</latres><longres Sync="TRUE">0.000000</longres></geograph></horizsys>
+	</spref>
+	<eainfo>
+		<detailed Name="majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84">
+			<enttyp>
+				<enttypl Sync="TRUE">majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">92</enttypc></enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">AV_LEGEND</attrlabl><attalias Sync="TRUE">AV_LEGEND</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Map and Geographic Information Center, Homer Babbidge Library, University of Connecticut</cntorg>
+					<cntper>Map Librarian</cntper>
+				</cntorgp>
+				<cntpos>Map Librarian</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>369 Fairfield Way</address>
+					<city>Storrs</city>
+					<state>Connecticut</state>
+					<postal>06269</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>860-486-4589</cntvoice>
+				<cntemail>magic@uconn.edu</cntemail>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<distliab>MAGIC is committed to offering its users accurate, useful, and current information about the state. Although every effort has been made to ensure the accuracy of information errors and conditions originating from physical sources used to develop the corporate database may be reflected in the data supplied. The client must be aware of data conditions and bear responsibility for the appropriate use of the information with respect to possible errors, original map scale, collection methodology, currency of data, and other conditions specific to certain data. MAGIC endorses but does not support secondary distribution of this data.</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>0.119</transize>
+					<dssize Sync="TRUE">0.114</dssize></digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://magic.lib.uconn.edu</networkr>
+							</networka>
+						</computer>
+					</onlinopt>
+				</digtopt>
+			</digform>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20110621</metd>
+		<metrd>2009</metrd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Map and Geographic Information Center, Homer Babbidge Library, University of Connecticut</cntorg>
+					<cntper>Map Librarian</cntper>
+				</cntorgp>
+				<cntpos>Map Librarian</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>369 Fairfield Way</address>
+					<city>Storrs</city>
+					<state>Connecticut</state>
+					<postal>06269</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>860-486-4589</cntvoice>
+				<cntemail>magic@uconn.edu</cntemail>
+				<hours>M-F-9 to 5</hours>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>none</metac>
+		<metuc>none</metuc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><MetaID>{D41BD13F-D352-4880-90A6-79C69673F156}</MetaID><CreaDate>20090519</CreaDate><CreaTime>16161400</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20110621</SyncDate><SyncTime>16265200</SyncTime><ModDate>20110621</ModDate><ModTime>16265200</ModTime></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.0.1770</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-73.659322</westBL><eastBL Sync="TRUE">-71.788462</eastBL><northBL Sync="TRUE">42.0486</northBL><southBL Sync="TRUE">40.997284</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-73.659322</westBL><eastBL Sync="TRUE">-71.788462</eastBL><northBL Sync="TRUE">42.0486</northBL><southBL Sync="TRUE">40.997284</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\library\archive\Magic2\vector\37800\majorroadct_37800_0000_1995_s250_ctdep_1_shp\WGS84\majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.114</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">GCS_WGS_1984</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="majorroadct_37800_0000_1995_s250_ctdep_1_shp_wgs84"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">92</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20110621</mdDateSt></metadata>
