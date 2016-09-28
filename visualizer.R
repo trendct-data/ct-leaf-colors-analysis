@@ -58,7 +58,7 @@ gg <- gg +   coord_cartesian(xlim = c(0,365*gap_num)) +
   theme(plot.title=element_text(face="bold",hjust=.012,vjust=.8,colour="#3C3C3C",size=20, family="Lato Regular")) 
 
     gg
-    
+  write.csv(image_df, paste0(y, "-", the_year, "_imagedf.csv"))
   ggsave(gg, file=paste0(y, "-", the_year, ".png"), width=9, height=2)
 }
 
