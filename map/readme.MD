@@ -1,3 +1,5 @@
+Estimated time periods for peak foliage in Connecticut
+
 phase1: September 17 - September 20
 phase2: September 21 - September 25
 phase3: September 26 - September 29
@@ -9,6 +11,15 @@ phase8: October 24 - October 30
 phase9: October 31 - November 6
 phase10: November 7 - November 14
 phase11: Past Peak
+
+Colors:
+
+Very low - green: rgb(4,76,34)
+Low - yellow: rgb(251,254,9)
+Moderate - orange: rgb(254,130,9)
+Peak - red: rgb(217,9,9)
+Past peak - maroon: rgb(82,12,15)
+
 
 http://www.depdata.ct.gov/forestry/foliage/foliagemap.htm
 
