@@ -132,3 +132,14 @@ mega <- read.csv("2320/mega.csv")
 mega$date[is.na(mega$date)] <- "#FFFFFF"
 write.csv(mega, "2320/mega.csv")
 
+# Colors
+
+# 
+# colors <- read.csv("hex_color_names.csv", stringsAsFactors = F)
+# colnames(colors) <- "color"
+# colors$name <- gsub(".*, ", "", colors$color)
+# colors$color <- gsub(", .*", "", colors$color)
+# colors$name <- gsub("]", "", colors$name)
+# colors$color <- paste0("#", colors$color)
+# mega <- read.csv("2320/mega.csv")
+# mega <- left_join(mega, colors)
