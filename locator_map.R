@@ -4,7 +4,7 @@
 # Mohawk Mountain
 # 41.838156, -73.315196
 
-# Criscuelo Park
+# Criscuolo Park
 # 41.302274, -72.903267
 
 
@@ -223,12 +223,12 @@ pm_ct <- pm_ct + theme(text = element_text(size=15), panel.background = element_
 pm_ct <- pm_ct + coord_fixed()
 #pm_ct <- pm_ct + annotate("point", x = -72.798078, y = 41.825198, colour = "tomato", size = 2) 
 pm_ct <- pm_ct + annotate("point", x = -72.903267, y = 41.302274, colour = "tomato", size = 2) 
-pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.73, label = "Criscuelo", size=5, family="Lato Black", colour="gray30") 
+pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.73, label = "Criscuolo", size=5, family="Lato Black", colour="gray30") 
 pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.53, label = "Park", size=5, family="Lato Black", colour="gray30") 
 
-ggsave("criscuelo_map_large.jpg", width=16, height=12, units="in", dpi=300)
+ggsave("map/criscuolo_map_large_uncropped.png", width=16, height=12, units="in", dpi=300)
 
-fer_magick <- image_read("criscuelo_map_large.jpg") %>%
+fer_magick <- image_read("map/criscuolo_map_large_uncropped.png") %>%
   image_crop("1000x1000+2232+1821")
 
-image_write(fer_magick, "map/criscuelo_map_large.png")
+image_write(fer_magick, "map/criscuolo_map_large.png")
