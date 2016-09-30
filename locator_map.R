@@ -4,6 +4,10 @@
 # Mohawk Mountain
 # 41.838156, -73.315196
 
+# Criscuelo Park
+# 41.302274, -72.903267
+
+
 library(stringr)
 require(maptools)
 require(ggplot2)
@@ -203,3 +207,28 @@ pm_ct <- pm_ct + coord_fixed()
 pm_ct
 
 ggsave("map/ct_map_roads.png", bg="transparent", width=6, height=4, units="in", dpi=300)
+
+### Criscuelo Park large
+
+
+pm_ct <- ggplot() 
+pm_ct <- pm_ct + geom_polygon(data = statetracts2, aes(x=long, y=lat, group=group), fill="white", color = "black", size=0.8)
+pm_ct <- pm_ct + gg_circle(r=2, xc=-72.7, yc=41.58, color="gray93", fill=NA, alpha=1, size=40) 
+pm_ct <- pm_ct + gg_circle(r=2.1, xc=-72.7, yc=41.58, color="white", fill=NA, alpha=1, size=40) 
+
+pm_ct <- pm_ct + theme_nothing(legend=TRUE) 
+pm_ct <- pm_ct + labs(x=NULL, y=NULL)
+pm_ct <- pm_ct + theme(text = element_text(size=15), panel.background = element_rect(fill = 'gray93', color=NA))
+
+pm_ct <- pm_ct + coord_fixed()
+#pm_ct <- pm_ct + annotate("point", x = -72.798078, y = 41.825198, colour = "tomato", size = 2) 
+pm_ct <- pm_ct + annotate("point", x = -72.903267, y = 41.302274, colour = "tomato", size = 2) 
+pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.73, label = "Criscuelo", size=5, family="Lato Black", colour="gray30") 
+pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.53, label = "Park", size=5, family="Lato Black", colour="gray30") 
+
+ggsave("criscuelo_map_large.jpg", width=16, height=12, units="in", dpi=300)
+
+fer_magick <- image_read("criscuelo_map_large.jpg") %>%
+  image_crop("1000x1000+2232+1821")
+
+image_write(fer_magick, "map/criscuelo_map_large.png")
