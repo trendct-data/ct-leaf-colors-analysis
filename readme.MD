@@ -9,7 +9,7 @@ This repository contains source data and analysis code for the Trend CT story:
 
 The code for the interactive part of the project is available here:
 
-* https://github.com/trendct-data/ct-leaf-colors-analysis
+* https://github.com/trendct/foliage-viz
 
 # Walkthroughs
 
