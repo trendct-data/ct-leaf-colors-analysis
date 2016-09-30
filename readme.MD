@@ -5,6 +5,12 @@ This repository contains source data and analysis code for the Trend CT story:
 
 *  [When Connecticut's changing leaves will be most brilliant](http://projects.ctmirror.org/content/trend/2016/10/foliage/).
 
+# Foliage data viz
+
+The analysis for this project is available here:
+
+* https://github.com/trendct-data/ct-leaf-colors-analysis
+
 # Walkthroughs
 
 * Analyzing and visualizing fall foliage colors (coming soon)- [HTML] [RMarkdown] 
