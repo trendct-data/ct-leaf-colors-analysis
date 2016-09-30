@@ -1,3 +1,8 @@
+# This script pulls the noontime daily photos from 3 earthcam archives between 2011 and 2016
+# This only works if you have an admin account on earthcam
+# And plug in the information in your cookies into the code below after you've logged in on your browser
+# To sum up, this script will only work on my account and the cookie information has already expired
+# But it's an interesting model for anyone who's curious enough to disect the code
 
 library(RCurl)
 library(RJSONIO)

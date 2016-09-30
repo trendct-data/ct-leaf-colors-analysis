@@ -38,25 +38,25 @@ gg_circle <- function(r, xc, yc, color="black", fill=NA, ...) {
 
 ### Large
 pm_ct <- ggplot() 
-pm_ct <- pm_ct + geom_polygon(data = statetracts2, aes(x=long, y=lat, group=group), fill="white", color = "black", size=0.2)
-pm_ct <- pm_ct + gg_circle(r=2, xc=-72.7, yc=41.58, color="gray93", fill="white", alpha=0.2, size=40) 
-pm_ct <- pm_ct + gg_circle(r=2.02, xc=-72.7, yc=41.58, color="white", fill="white", alpha=0.2, size=40) 
+pm_ct <- pm_ct + geom_polygon(data = statetracts2, aes(x=long, y=lat, group=group), fill="white", color = "black", size=.8)
+pm_ct <- pm_ct + gg_circle(r=2, xc=-72.7, yc=41.58, color="gray93", fill=NA, alpha=1, size=40) 
+pm_ct <- pm_ct + gg_circle(r=2.1, xc=-72.7, yc=41.58, color="white", fill=NA, alpha=1, size=40) 
 
 pm_ct <- pm_ct + theme_nothing(legend=TRUE) 
 pm_ct <- pm_ct + labs(x=NULL, y=NULL)
 pm_ct <- pm_ct + theme(text = element_text(size=15), panel.background = element_rect(fill = 'gray93', color=NA))
 
 pm_ct <- pm_ct + coord_fixed()
-pm_ct <- pm_ct + annotate("point", x = -72.798078, y = 41.825198, colour = "tomato", size = 2) 
+pm_ct <- pm_ct + annotate("point", x = -72.798078, y = 41.825198, colour = "tomato", size = 3) 
 #pm_ct <- pm_ct + annotate("point", x = -73.315196, y = 41.838156, colour = "tomato", size = 2) 
-pm_ct <- pm_ct + annotate("text", x = -72.3, y = 41.725198, label = "Talcott Mountain", size=3, family="Lato Black", colour="gray30") 
+pm_ct <- pm_ct + annotate("text", x = -72.6, y = 41.625198, label = "Talcott Mountain", size=5, family="Lato Black", colour="gray30") 
   
-ggsave("talcott_map.jpg", width=16, height=12, units="in", dpi=300)
+ggsave("talcott_map_large.jpg", width=16, height=12, units="in", dpi=300)
 
-fer_magick <- image_read("map/talcott_map.jpg") %>%
-  image_crop("950x950+2257+1845")
+fer_magick <- image_read("talcott_map_large.jpg") %>%
+  image_crop("1000x1000+2232+1821")
 
-image_write(fer_magick, "map/talcott_map.png")
+image_write(fer_magick, "map/talcott_map_large.png")
 
 ### Small
 
@@ -78,9 +78,9 @@ ggsave("map/talcott_map_sm.png", width=8, height=6, units="in", dpi=300)
 
 ### Large
 pm_ct <- ggplot() 
-pm_ct <- pm_ct + geom_polygon(data = statetracts2, aes(x=long, y=lat, group=group), fill="white", color = "black", size=0.2)
-pm_ct <- pm_ct + gg_circle(r=2, xc=-72.7, yc=41.58, color="gray93", fill="white", alpha=0.2, size=40) 
-pm_ct <- pm_ct + gg_circle(r=2.02, xc=-72.7, yc=41.58, color="white", fill="white", alpha=0.2, size=40) 
+pm_ct <- pm_ct + geom_polygon(data = statetracts2, aes(x=long, y=lat, group=group), fill="white", color = "black", size=0.8)
+pm_ct <- pm_ct + gg_circle(r=2, xc=-72.7, yc=41.58, color="gray93", fill=NA, alpha=1, size=40) 
+pm_ct <- pm_ct + gg_circle(r=2.1, xc=-72.7, yc=41.58, color="white", fill=NA, alpha=1, size=40) 
 
 pm_ct <- pm_ct + theme_nothing(legend=TRUE) 
 pm_ct <- pm_ct + labs(x=NULL, y=NULL)
@@ -89,14 +89,14 @@ pm_ct <- pm_ct + theme(text = element_text(size=15), panel.background = element_
 pm_ct <- pm_ct + coord_fixed()
 #pm_ct <- pm_ct + annotate("point", x = -72.798078, y = 41.825198, colour = "tomato", size = 2) 
 pm_ct <- pm_ct + annotate("point", x = -73.315196, y = 41.838156, colour = "tomato", size = 2) 
-pm_ct <- pm_ct + annotate("text", x = -72.85, y = 41.725198, label = "Mohawk Mountain", size=3, family="Lato Black", colour="gray30") 
+pm_ct <- pm_ct + annotate("text", x = -72.62, y = 41.67, label = "Mohawk Mountain", size=5, family="Lato Black", colour="gray30") 
 
-ggsave("mohawk_map.jpg", width=16, height=12, units="in", dpi=300)
+ggsave("mohawk_map_large.jpg", width=16, height=12, units="in", dpi=300)
 
-fer_magick <- image_read("map/mohawk_map.jpg") %>%
-  image_crop("950x950+2257+1845")
+fer_magick <- image_read("mohawk_map_large.jpg") %>%
+  image_crop("1000x1000+2232+1821")
 
-image_write(fer_magick, "map/mohawk_map.png")
+image_write(fer_magick, "map/mohawk_map_large.png")
 
 
 ### Small
