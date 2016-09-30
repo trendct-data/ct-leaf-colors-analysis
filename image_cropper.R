@@ -1,4 +1,9 @@
+# This script resizes raw photos for use in our interactives
+
 library(magick)
+
+# x is the folder where the raw images are
+# y is the destination folder
 
 bulk_cropper <- function(x, y) {
 
@@ -32,7 +37,4 @@ bulk_cropper("2320/2012", "2320_cropped")
 bulk_cropper("2320/2013", "2320_cropped")
 bulk_cropper("2320/2014", "2320_cropped")
 bulk_cropper("2320/2015", "2320_cropped")
-
-
-
 

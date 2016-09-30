@@ -1,7 +1,13 @@
+# This script visualizes the spectrum of colors in a year for a given camera
+
 library(ggplot2)
 library(dplyr)
 library(extrafont)
 
+# This is a function that will generate individual spectrum charts based on year and cam
+# x is year
+# y is folder where raw photos are
+# z is the name of the location where the camera is
 
 cam_spectrum <- function(x, y, z) {
 y <- y
@@ -76,18 +82,9 @@ cam_spectrum(2013, "2318", "Mohawk Mountain")
 cam_spectrum(2014, "2318", "Mohawk Mountain")
 cam_spectrum(2015, "2318", "Mohawk Mountain")
 
-
 cam_spectrum(2010, "2320", "Criscuolo Park")
 cam_spectrum(2011, "2320", "Criscuolo Park")
 cam_spectrum(2012, "2320", "Criscuolo Park")
 cam_spectrum(2013, "2320", "Criscuolo Park")
 cam_spectrum(2014, "2320", "Criscuolo Park")
 cam_spectrum(2015, "2320", "Criscuolo Park")
-# 
- x <- 2013
- y <- "2320"
- z <- "Criscuolo Park"
-
- x <- 2015
- y <- "2318"
- z <- "Mohawk Mountain"

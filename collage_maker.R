@@ -1,10 +1,18 @@
+# This script creates an annual collage of earthcam photos
+# It uses the magick library to resize and place raw photos into a grid
+
 #install.packages("magick")
 library(magick)
 library(dplyr)
-#175 x 131
+
+# The size of individual photos we're shooting for
+# 175 x 131
+
+# Creating a function to create collages around specific camera photo folders and years
+# x is year
+# y is folder 
 
 collage_maker <- function(x, y) {
-  
 x <- x
 y <- y
 mega <- read.csv(paste0(y, "/mega.csv"))
@@ -63,11 +71,13 @@ image_write(composite, paste0("collage-", y, "-", x, ".png", format="png"))
 
 }
 
+# Now running the functions on yeras and folders
+# these folders are not in the repo because they're huge (5GB each)
+
 collage_maker(2012, "2319")
 collage_maker(2013, "2319")
 collage_maker(2014, "2319")
 collage_maker(2015, "2319")
-
 
 collage_maker(2012, "2318")
 collage_maker(2013, "2318")

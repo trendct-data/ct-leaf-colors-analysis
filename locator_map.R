@@ -1,3 +1,5 @@
+# This script generates locator maps of differing sizes and line/font width for use with our story
+
 # Talcott Mountain
 # 41.825198, -72.798078
 

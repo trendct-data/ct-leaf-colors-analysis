@@ -1,5 +1,6 @@
+# Creating a GIF with annotations of individual phase map images
 
-# Loop!
+# Loop to:
 # Step 1. Load base background
 # Step 2. Place map
 # Step 3. Place legend
@@ -8,6 +9,7 @@
 # Step 6. Get file list and create gif
 
 #install.packages("magick")
+library(dplyr)
 library(magick)
 library(extrafont)
 
@@ -19,8 +21,11 @@ phase_list <- read.csv("map/phase_sheet.csv", stringsAsFactors = F)
 for (i in 1:nrow(phase_list)) {
   the_image <- image_read(paste0("map/",phase_list$File[i]))
   
+  
   combined <- gif_base %>% image_composite(the_image, offset="+0+75") %>%
-    image_composite(gif_legend, offset="+300+475") %>%
+    # Uncomment the line below to add a legend to the GIF
+    
+    #image_composite(gif_legend, offset="+300+475") %>%
     image_annotate(phase_list$Title[i], size=46, location="+230+50") 
   
   
