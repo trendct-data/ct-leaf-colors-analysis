@@ -20,6 +20,13 @@ The photos used in this analysis are from the archives of [EarthCam](http://www.
 
 ### What's in this repo
 
+* `_cropped` **folder** - Resized photos of earthcam photos.
+* `collages` **folder** - Collages of earthcam photos by year and camera.
+* `hex_lists` **folder** - dataframes of cams and dates and the dominant hex color of the leaves.
+* `map` **folder** - Various spatial location visualizations.
+* `shapes` **folder** - Raw shape files used in the spatial visualizations.
+* `spectrums` **folder** - Generated spectrum charts of foliage by camera and year.
+* `story` **folder** - Drafts of the story.
 * `collage_maker.R` - This script creates an annual collage of earthcam photos by resizing raw photos and placing them on a grid. These large images were originally planned to help simplify the loading of photos in our interactives but even the minified, gridded files were too large to use in the end.
 * `gif_maker.R` - Creating a GIF with annotations of individual phase map images.
 * `image_analyzer.R` - This script takes raw images in a folder, crops them to where the foliage is, determines the median color for each, and adds it to a dataframe and exports it.
